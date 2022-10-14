@@ -1,0 +1,104 @@
+@use "sass:map";
+
+.table-container {
+
+    & .container-vertical {
+
+        & div[class|="box"] .test-subject_algebra {
+
+            z-index: 10;
+            height: calc(3 * $_1h - 1px);
+            top: calc(7 * $_1h - 1px);
+            background-color: $subject_orange_3;
+            border: 1px solid $subject_orange_3;
+        }
+
+        & div[class|="box"] .test-subject_geometry {
+            z-index: 10;
+            height: calc(1.5 * $_1h - 1px);
+            top: calc(9 * $_1h - 1px);
+            background-color: $subject_blue_1;
+            border: 1px solid $subject_blue_1;
+        }
+    }
+
+    & .container-horizontal {
+
+        & .box {
+            position: relative;
+        }
+
+        & .box p {
+            position: absolute;
+            display: block;
+            margin: 0px;
+            right: 105%;
+            color: #8e8e8e;
+        }
+
+        & div._00_02 p._00 {
+            bottom: 100%;
+            transform: translateY(50%);
+        }
+
+        & div._00_02 p._02 {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._02_04 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._04_06 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._06_08 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._08_10 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._10_12 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._12_14 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._14_16 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._16_18 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._18_20 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._20_22 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+
+        & div._22_00 p {
+            top: 100%;
+            transform: translateY(-50%);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@use "sass:map";
+
+/*==========*/
+// Spacing 
+/*==========*/
+$_15m: calc( 100% / 96 );
+$_30m: calc( $_15m * 2 );
+$_45m: calc( $_15m * 3 );
+$_1h: calc( $_15m * 4 );
+$_2h: calc( $_15m * 8 );
+
+@debug $_2h;
+/*==========*/
+// Colors 
+/*==========*/
+$colors: (
+    "general": (
+        "gray-1": #F4F4F4
+    ),
+    "subjects": (
+        "orange-1": #874400,
+        "orange-2": #D36B00,
+        "orange-3": #FF8C19,
+        "blue-1": #006787,
+        "blue-2": #00A2D4,
+        "gray-1": #505560,
+        "gray-2": #606D8A
+    )
+);
+
+/*===== General =====*/
+$general_gray_1: map.get($colors, "general", "gray-1");
+
+/*===== Subjects =====*/
+
+/* Orange */
+$subject_orange_1: map.get($colors, "subjects", "orange-1");
+$subject_orange_2: map.get($colors, "subjects", "orange-2");
+$subject_orange_3: map.get($colors, "subjects", "orange-3");
+
+/* Blue */
+$subject_blue_1: map.get($colors, "subjects", "blue-1");
+$subject_blue_2: map.get($colors, "subjects", "blue-2");
+
+/* Gray */
+$subject_gray_1: map.get($colors, "subjects", "gray-1");
+$subject_gray_2: map.get($colors, "subjects", "gray-2");
