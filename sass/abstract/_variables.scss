@@ -15,7 +15,12 @@ $_2h: calc( $_15m * 8 );
 /*==========*/
 $colors: (
     "general": (
-        "gray-1": #F4F4F4
+        "blue-1": #557B83,
+        "blue-2": #39AEA9,
+        "green-1": #A2D5AB,
+        "green-2": #E5EFC1,
+        "gray-1": #F4F4F4,
+        "red-1": #C86A6A
     ),
     "subjects": (
         "orange-1": #874400,
@@ -29,7 +34,19 @@ $colors: (
 );
 
 /*===== General =====*/
+/* Blue */
+$general_blue_1: map.get($colors, "general", "blue-1");
+$general_blue_2: map.get($colors, "general", "blue-2");
+
+/* Green */
+$general_green_1: map.get($colors, "general", "green-1");
+$general_green_2: map.get($colors, "general", "green-2");
+
+/* Gray */
 $general_gray_1: map.get($colors, "general", "gray-1");
+
+/* Red */
+$general_red_1: map.get($colors, "general", "red-1");
 
 /*===== Subjects =====*/
 

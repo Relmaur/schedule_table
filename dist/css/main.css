@@ -3,42 +3,72 @@
   font-family: "Montserrat";
 }
 
+body {
+  background-color: rgb(202, 202, 202);
+}
+
 /*==========*/
 /*==========*/
 /*==========*/
 /*==========*/
 /*===== General =====*/
+/* Blue */
+/* Green */
+/* Gray */
+/* Red */
 /*===== Subjects =====*/
 /* Orange */
 /* Blue */
 /* Gray */
-.table-container {
-  position: relative;
+.schedule {
   width: 90vw;
-  max-width: 758px;
-  height: 90vh;
-  max-height: 576px;
-  margin: 10vh auto;
+  max-width: 900px;
+  height: 100vh;
+  max-height: 690px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  border-radius: 10px;
 }
-.table-container .container-vertical {
+.schedule .week {
+  height: 50px;
+  width: 100%;
+  background-color: #E5EFC1;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.schedule .table-container {
+  position: relative;
+  width: 100%;
+  max-width: 758px;
+  height: 100%;
+  max-height: 576px;
+  margin-left: 70px;
+}
+.schedule .table-container .container-vertical {
   width: 100%;
   height: 100%;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 20px;
 }
-.table-container .container-vertical div[class|=box] {
+.schedule .table-container .container-vertical div[class|=box] {
   background-color: #F4F4F4;
-}
-.table-container .container-vertical div[class|=box] div {
   position: relative;
+}
+.schedule .table-container .container-vertical div[class|=box] div {
+  position: absolute;
   font-size: 12px;
   color: white;
+  width: calc(100% - 2px);
 }
-.table-container .container-vertical div[class|=box] div p {
+.schedule .table-container .container-vertical div[class|=box] div p {
   margin: 5px 0 0 5px;
 }
-.table-container .container-horizontal {
+.schedule .table-container .container-horizontal {
   position: absolute;
   top: 0;
   width: 100%;
@@ -47,25 +77,28 @@
   grid-template-rows: repeat(12, 1fr);
   z-index: 5;
 }
-.table-container .container-horizontal div:first-child {
+.schedule .table-container .container-horizontal div:first-child {
   border-top: 1px solid #8e8e8e;
 }
-.table-container .container-horizontal div {
+.schedule .table-container .container-horizontal div {
   background-color: transparent;
   border-bottom: 1px solid #8e8e8e;
 }
 
+.table-container .container-vertical div[class|=box]:hover {
+  cursor: pointer;
+}
 .table-container .container-vertical div[class|=box] .test-subject_algebra {
   z-index: 10;
-  height: calc(12.5% - 1px);
   top: calc(29.1666666667% - 1px);
+  height: calc(12.5% - 1px);
   background-color: #FF8C19;
   border: 1px solid #FF8C19;
 }
 .table-container .container-vertical div[class|=box] .test-subject_geometry {
   z-index: 10;
-  height: calc(6.25% - 1px);
-  top: calc(37.5% - 1px);
+  top: calc(47.9166666667% - 1px);
+  height: calc(8.3333333333% - 1px);
   background-color: #006787;
   border: 1px solid #006787;
 }

@@ -4,19 +4,22 @@
 
     & .container-vertical {
 
-        & div[class|="box"] .test-subject_algebra {
+        & div[class|="box"]:hover {
+            cursor: pointer;
+        }
 
+        & div[class|="box"] .test-subject_algebra {
             z-index: 10;
-            height: calc(3 * $_1h - 1px);
             top: calc(7 * $_1h - 1px);
+            height: calc(3 * $_1h - 1px);
             background-color: $subject_orange_3;
             border: 1px solid $subject_orange_3;
         }
 
         & div[class|="box"] .test-subject_geometry {
             z-index: 10;
-            height: calc(1.5 * $_1h - 1px);
-            top: calc(9 * $_1h - 1px);
+            top: calc(11.5 * $_1h - 1px);
+            height: calc(2 * $_1h - 1px);
             background-color: $subject_blue_1;
             border: 1px solid $subject_blue_1;
         }
