@@ -1,25 +1,24 @@
-@use "sass:map";
 
 .table-container {
 
     & .container-vertical {
 
-        & div[class|="box"]:hover {
+        & div[class|="day"]:hover {
             cursor: pointer;
         }
 
-        & div[class|="box"] .test-subject_algebra {
+        & div[class|="day"] .test-subject_algebra {
             z-index: 10;
-            top: calc(7 * $_1h - 1px);
-            height: calc(3 * $_1h - 1px);
+            // top: calc(7 * $_1h - 1px); // Subject start
+            // height: calc(3 * $_1h - 1px); // Subject duration
             background-color: $subject_orange_3;
             border: 1px solid $subject_orange_3;
         }
 
-        & div[class|="box"] .test-subject_geometry {
+        & div[class|="day"] .test-subject_geometry {
             z-index: 10;
-            top: calc(11.5 * $_1h - 1px);
-            height: calc(2 * $_1h - 1px);
+            // top: calc(11.5 * $_1h - 1px); // Subject start
+            // height: calc(2 * $_1h - 1px); // Subject duration
             background-color: $subject_blue_1;
             border: 1px solid $subject_blue_1;
         }
@@ -35,8 +34,9 @@
             position: absolute;
             display: block;
             margin: 0px;
-            right: 105%;
-            color: #8e8e8e;
+            right: 103.5%;
+            color: #000000;
+            font-weight: lighter;
         }
 
         & div._00_02 p._00 {

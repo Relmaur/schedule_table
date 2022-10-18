@@ -1,0 +1,23 @@
+@use 'sass:math';
+
+// Hours 
+@for $i from 0 through 12 {
+
+    // Minutes
+    @for $j from 0 through 60 {
+
+        $decimal_minutes: $j * math.div(1, 60);
+
+        // @debug $minutes;
+
+        .subject_start-#{$i}_#{$j} {
+            top: calc(($i + $decimal_minutes) * $_1h - 1px);
+        }
+
+        .subject_duration-#{$i}_#{$j} {
+            height: calc(($i + $decimal_minutes) * $_1h - 1px);
+        }
+
+    }
+
+}
